@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 stejných sloupců */
+  grid-template-rows: 1fr 4fr 3fr 4fr; /* Opravený zápis */
+  grid-template-areas:
+    "menu menu menu menu . . . ."
+    "header header header header header header header header"
+    ". . intro intro intro intro intro intro"
+    "link1 link1 . link2 link2 . link3 link3";
+  gap: 10px; /* Přidání mezery mezi prvky */
+  height: 100vh; /* Aby grid vyplnil celou výšku */
+}
+
+.menu {
+  grid-area: menu;
+  background-color: rgb(35, 56, 4);
+  color: white;
+}
+.nav{display: flex;
+    width:50%;
+justify-content: space-around;}
+
+.nav-item {
+  display: inline-block;
+  color: white;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(87, 83, 83);
+}
+
+.intro {
+  /* Opraveno */
+  grid-area: intro;
+  background-color: rgb(237, 216, 151);
+}
+
+.link1 {
+  grid-area: link1;
+  background-color: rgb(92, 141, 20);
+}
+
+.link2 {
+  grid-area: link2;
+  background-color: rgb(172, 250, 55);
+}
+
+.link3 {
+  grid-area: link3;
+  background-color: rgb(85, 46, 26);
+}

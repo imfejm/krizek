@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "sidebar content .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    gap: 5px;
+  }
+  
+  .header {
+    grid-area: header;
+    background: lightblue;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background: lightcoral;
+  }
+  
+  .content {
+    grid-area: content;
+    background: lightgreen;
+  }

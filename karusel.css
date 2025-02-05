@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "menu"
+    "header";
+  height: 70vh;
+}
+.menu {
+  grid-area: menu;
+  background-color: rgb(6, 47, 6);
+  color: white;
+}
+
+.carousel {
+  grid-area: header;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* 100% * počet obrázků */
+  height: 100%;
+  transition: transform 3s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Tečky */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(113, 69, 235);
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.dot.active {
+  opacity: 1;
+}

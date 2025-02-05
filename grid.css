@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-rows: 4fr 3fr 5fr auto;
+  gap: 20px;
+  height: 100vh;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  background-color: green;
+  color: white;
+  padding: 20px;
+}
+.content1,
+.content2 {
+  background-color: aqua;
+}
+.obsah {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.footer {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+}
