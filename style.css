@@ -1,11 +1,12 @@
 .ham {
-  width: 5vw;
-  max-height: max-content;
+  width: 3vw;
+ aspect-ratio: 1/1; /*vyrobím čtverec*/
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 2% 3% 0 0;
+  justify-content: space-around; 
   cursor: pointer;
+  
+  
 }
 .cara1,
 .cara2,
@@ -14,7 +15,6 @@
   flex-shrink: 0;
   height: 2px;
   background-color: black;
-  margin: 10%;
 }
 .cara2 {
   background-color: #bcb276;
@@ -36,15 +36,17 @@
 /*navigace klik*/
 
 .nav {
-  background-color: #bcb176ea;
+    background-color: #bcb176ea;
   position: fixed;
-
   width: 40%;
   height: 100%;
   right: 0;
   top: 0;
   margin-top: 0;
-  padding-top: 10rem;
+  padding: 5%;
+  display:grid;
+  height: 100 vh;
+  grid-template-rows: repeat(6, 1fr);
 }
 ul {
   list-style: none;
@@ -69,4 +71,18 @@ ul {
   display: none;
 }
 
+.caraB {
+  display: none;
+}
+.caraA {
+  transform: rotate(45deg);
+  position:relative;
+  top:20%;
+}
+.caraC {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom:30%;
 
+  /*background-color: red;*//
+}

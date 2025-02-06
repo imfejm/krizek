@@ -11,40 +11,45 @@
   grid-area: menu;
   background-color: rgb(6, 47, 6);
   color: white;
+  position: relative;
+}
+.logo {
+  width: 8rem;
+  position: absolute;
+  bottom: 75%;
+  left: 87%;
 }
 
 .header {
-    grid-area: header;
-    /*height: 100vh;*/
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-    position: relative;
-  }
-  
-  /* Kontejner pro tečky */
-  .dots {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Jednotlivé tečky */
-  .dot {
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.3s;
-  }
-  
-  .dot.active {
-    opacity: 1; /* Aktivní tečka je jasnější */
-  }
-  
+  grid-area: header;
+  /*height: 100vh;*/
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+}
 
+/* Kontejner pro tečky */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Jednotlivé tečky */
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.dot.active {
+  opacity: 1; /* Aktivní tečka je jasnější */
+}
