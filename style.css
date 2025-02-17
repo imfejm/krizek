@@ -46,7 +46,7 @@
   padding: 5%;
   display:grid;
   height: 100 vh;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
 }
 ul {
   list-style: none;
